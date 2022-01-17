@@ -116,7 +116,7 @@ class _AnswersPageState extends State<AnswersPage> {
               child: Column(
                 children: [
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       child: ListTile(
                         onTap: () {
                           _obrasheniya();
@@ -137,7 +137,7 @@ class _AnswersPageState extends State<AnswersPage> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       child: ListTile(
                         onTap: () {
                           _locatsiya();
@@ -158,7 +158,7 @@ class _AnswersPageState extends State<AnswersPage> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       child: ListTile(
                         title: MyTextWidget(
                           color: AppColors().kTitleColor,
@@ -219,145 +219,149 @@ class _AnswersPageState extends State<AnswersPage> {
       ),
       context: context,
       builder: (context) {
-        return Container(
-          height: getProportionateScreenHeight(385.0),
-          width: double.infinity,
-          child: Column(
-            children: [
-              Container(
-                margin: EdgeInsets.only(
-                  top: getProportionateScreenHeight(30.0),
-                ),
-                padding: EdgeInsets.only(
-                  left: getProportionateScreenWidth(28.5),
-                  right: getProportionateScreenWidth(28.0),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      child: MyTextWidget(
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return SizedBox(
+              height: getProportionateScreenHeight(385.0),
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(
+                      top: getProportionateScreenHeight(30.0),
+                    ),
+                    padding: EdgeInsets.only(
+                      left: getProportionateScreenWidth(28.5),
+                      right: getProportionateScreenWidth(28.0),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(
+                          child: MyTextWidget(
+                            color: AppColors().kPriaryBottomSheetColor,
+                            size: getProportionateScreenWidth(24.0),
+                            text: 'Выберите язык',
+                          ),
+                        ),
+                        SizedBox(
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.cancel,
+                              color: AppColors().kPrimaryMiniButtonColors,
+                            ),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(13.0)),
+                    child: CheckboxListTile(
+                      activeColor: AppColors().kPrimaryFirstBgColors,
+                      title: MyTextWidget(
                         color: AppColors().kPriaryBottomSheetColor,
                         size: getProportionateScreenWidth(24.0),
-                        text: 'Выберите язык',
+                        text: 'Вопрос',
                       ),
+                      value: _value1,
+                      onChanged: (v) {
+                        setState(() {
+                          _value1 = !_value1;
+                        });
+                      },
                     ),
-                    Container(
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.cancel,
-                          color: AppColors().kPrimaryMiniButtonColors,
-                        ),
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(22.0)),
+                    child: Divider(
+                      height: getProportionateScreenHeight(3.0),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(13.0)),
+                    child: CheckboxListTile(
+                      activeColor: AppColors().kPrimaryFirstBgColors,
+                      title: MyTextWidget(
+                        color: AppColors().kPriaryBottomSheetColor,
+                        size: getProportionateScreenWidth(24.0),
+                        text: 'Жалоба',
                       ),
+                      value: _value2,
+                      onChanged: (v) {
+                        setState(() {
+                          _value2 = !_value2;
+                        });
+                      },
                     ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(13.0)),
-                child: CheckboxListTile(
-                  activeColor: AppColors().kPrimaryFirstBgColors,
-                  title: MyTextWidget(
-                    color: AppColors().kPriaryBottomSheetColor,
-                    size: getProportionateScreenWidth(24.0),
-                    text: 'Вопрос',
                   ),
-                  value: _value1,
-                  onChanged: (v) {
-                    setState(() {
-                      _value1 = !_value1;
-                    });
-                  },
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(22.0)),
-                child: Divider(
-                  height: getProportionateScreenHeight(3.0),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(13.0)),
-                child: CheckboxListTile(
-                  activeColor: AppColors().kPrimaryFirstBgColors,
-                  title: MyTextWidget(
-                    color: AppColors().kPriaryBottomSheetColor,
-                    size: getProportionateScreenWidth(24.0),
-                    text: 'Жалоба',
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(22.0)),
+                    child: Divider(
+                      height: getProportionateScreenHeight(3.0),
+                    ),
                   ),
-                  value: _value2,
-                  onChanged: (v) {
-                    setState(() {
-                      _value2 = !_value2;
-                    });
-                  },
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(22.0)),
-                child: Divider(
-                  height: getProportionateScreenHeight(3.0),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(13.0)),
-                child: CheckboxListTile(
-                  activeColor: AppColors().kPrimaryFirstBgColors,
-                  title: MyTextWidget(
-                    color: AppColors().kPriaryBottomSheetColor,
-                    size: getProportionateScreenWidth(24.0),
-                    text: 'Предложения',
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(13.0)),
+                    child: CheckboxListTile(
+                      activeColor: AppColors().kPrimaryFirstBgColors,
+                      title: MyTextWidget(
+                        color: AppColors().kPriaryBottomSheetColor,
+                        size: getProportionateScreenWidth(24.0),
+                        text: 'Предложения',
+                      ),
+                      value: _value3,
+                      onChanged: (v) {
+                        setState(() {
+                          _value3 = !_value3;
+                        });
+                      },
+                    ),
                   ),
-                  value: _value3,
-                  onChanged: (v) {
-                    setState(() {
-                      _value3 = !_value3;
-                    });
-                  },
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(22.0)),
-                child: Divider(
-                  height: getProportionateScreenHeight(3.0),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(13.0)),
-                child: CheckboxListTile(
-                  activeColor: AppColors().kPrimaryFirstBgColors,
-                  title: MyTextWidget(
-                    color: AppColors().kPriaryBottomSheetColor,
-                    size: getProportionateScreenWidth(24.0),
-                    text: 'Ищу работу ',
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(22.0)),
+                    child: Divider(
+                      height: getProportionateScreenHeight(3.0),
+                    ),
                   ),
-                  value: _value4,
-                  onChanged: (v) {
-                    setState(() {
-                      _value4 = !_value4;
-                    });
-                  },
-                ),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(13.0)),
+                    child: CheckboxListTile(
+                      activeColor: AppColors().kPrimaryFirstBgColors,
+                      title: MyTextWidget(
+                        color: AppColors().kPriaryBottomSheetColor,
+                        size: getProportionateScreenWidth(24.0),
+                        text: 'Ищу работу ',
+                      ),
+                      value: _value4,
+                      onChanged: (v) {
+                        setState(() {
+                          _value4 = !_value4;
+                        });
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: getProportionateScreenWidth(22.0)),
+                    child: Divider(
+                      height: getProportionateScreenHeight(3.0),
+                    ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(22.0)),
-                child: Divider(
-                  height: getProportionateScreenHeight(3.0),
-                ),
-              ),
-            ],
-          ),
+            );
+          }
         );
       },
     );
@@ -377,7 +381,7 @@ class _AnswersPageState extends State<AnswersPage> {
       ),
       context: context,
       builder: (context) {
-        return Container(
+        return SizedBox(
           height: getProportionateScreenHeight(300.0),
           width: double.infinity,
           child: Column(
@@ -393,14 +397,14 @@ class _AnswersPageState extends State<AnswersPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
+                    SizedBox(
                       child: MyTextWidget(
                         color: AppColors().kPriaryBottomSheetColor,
                         size: getProportionateScreenWidth(24.0),
                         text: 'Выберите место',
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       child: IconButton(
                         icon: Icon(
                           Icons.cancel,
@@ -418,7 +422,7 @@ class _AnswersPageState extends State<AnswersPage> {
                 padding: EdgeInsets.symmetric(
                     horizontal: getProportionateScreenWidth(13.0)),
                 child: ListTile(
-                  leading: Container(
+                  leading: SizedBox(
                     child: MyTextWidget(
                       color: AppColors().kPrimaryBlackColors,
                       size: getProportionateScreenWidth(18.0),

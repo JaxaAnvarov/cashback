@@ -207,7 +207,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     child: MyTextWidget(
                       color: AppColors().kTelColor,
                       size: getProportionateScreenWidth(18.0),
-                      text: '+998 94 555 58 92',
+                      text: '+998 94 555 95 62',
                     ),
                   ),
                   Container(
@@ -265,7 +265,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             text: 'Выберите язык',
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           child: IconButton(
                             icon: Icon(
                               Icons.cancel,

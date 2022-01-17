@@ -1,0 +1,4 @@
+#Mon Jan 17 17:54:17 UZT 2022
+base.0=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

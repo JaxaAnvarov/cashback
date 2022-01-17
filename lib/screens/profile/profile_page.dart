@@ -3,7 +3,7 @@ import 'package:tiin_cashback/core/constants/exports.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class ProfilePage extends StatelessWidget {
-   ProfilePage({Key? key}) : super(key: key);
+  ProfilePage({Key? key}) : super(key: key);
 
   double? _height;
   double? _width;
@@ -42,19 +42,8 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(
-                  top: getProportionateScreenHeight(24.0),
-                  left: getProportionateScreenWidth(15.0),
-                  right: getProportionateScreenWidth(236.0)),
-              child: MyTextWidget(
-                color: AppColors().kPrimaryBlackColors,
-                size: getProportionateScreenWidth(18.0),
-                text: 'Мой пофиль в Tiin',
-              ),
-            ),
             SizedBox(height: getProportionateScreenHeight(10.0)),
-            Container(
+            SizedBox(
               child: ListTile(
                 leading: Container(
                   height: getProportionateScreenWidth(59.0),
@@ -85,7 +74,7 @@ class ProfilePage extends StatelessWidget {
                   onTap: () {
                     _showAlertDiaog(context);
                   },
-                  child: Container(
+                  child: SizedBox(
                     height: getProportionateScreenWidth(30.0),
                     width: getProportionateScreenWidth(30.0),
                     child: SvgPicture.asset(AppIcons().logOut),
@@ -230,7 +219,7 @@ class ProfilePage extends StatelessWidget {
                       child: MyTextWidget(
                         color: AppColors().kTelColor,
                         size: getProportionateScreenWidth(18.0),
-                        text: '+998 94 555 58 92',
+                        text: '+998 94 555 95 62',
                       ),
                     ),
                     Container(

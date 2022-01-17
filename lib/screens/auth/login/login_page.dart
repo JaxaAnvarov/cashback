@@ -3,7 +3,7 @@ import 'package:tiin_cashback/core/constants/exports.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -240,48 +240,17 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            // Row(
-            //   children: [
-            //     ElevatedButton(
-            //       onPressed: () {
-            //         setState(
-            //           () {
-            //             context.setLocale(
-            //               const Locale(
-            //                 'ru',
-            //                 'RU',
-            //               ),
-            //             );
-            //           },
-            //         );
-            //       },
-            //       child: const Text('ru'),
-            //     ),
-            //     ElevatedButton(
-            //       onPressed: () {
-            //         setState(
-            //           () {
-            //             context.setLocale(
-            //               const Locale(
-            //                 'uz',
-            //                 'UZ',
-            //               ),
-            //             );
-            //           },
-            //         );
-            //       },
-            //       child: const Text('uz'),
-            //     ),
-            //   ],
-            // )
           ],
         ),
       ),
     );
   }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    FormServices().number.dispose();
+  }
 }
 
-
-/*
-
- */

@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                               AppColors().kPrimaryText1Colors,
                                           size:
                                               getProportionateScreenWidth(18.0),
-                                          text: 'На вашем балансе'.tr(),
+                                          text: 'На вашем балансе:'.tr(),
                                         ),
                                       ),
                                       SizedBox(
@@ -487,7 +487,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             );
           }
         },
-      ),
+       ),
     );
   }
 }

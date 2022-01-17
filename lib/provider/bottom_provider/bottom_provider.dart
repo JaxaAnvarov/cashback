@@ -5,7 +5,7 @@ class BottomNavBarProvier extends ChangeNotifier {
   int _currentIndex = 0;
   final List<Widget> _screens = [
     const HomePage(),
-    const LocationPage(),
+    LocationPage(),
     const BarcodePage(),
     const InfoPage(),
     ProfilePage(),

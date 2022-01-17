@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiin_cashback/core/constants/exports.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class InfoPage extends StatefulWidget {
   const InfoPage({Key? key}) : super(key: key);
@@ -42,7 +43,7 @@ class _InfoPageState extends State<InfoPage> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                           child: IconButton(
                             icon: Icon(
                               Icons.arrow_back_ios,
@@ -51,7 +52,7 @@ class _InfoPageState extends State<InfoPage> {
                             onPressed: () {},
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           child: MyTextWidget(
                             color: AppColors().kPrimaryWhiteColors,
                             size: getProportionateScreenWidth(18.0),
@@ -60,7 +61,7 @@ class _InfoPageState extends State<InfoPage> {
                         ),
                       ],
                     ),
-                    Container(
+                    SizedBox(
                       child: SvgPicture.asset(
                         AppIcons().notificationFalse,
                       ),
@@ -70,7 +71,7 @@ class _InfoPageState extends State<InfoPage> {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: getProportionateScreenHeight(620.0),
             width: double.infinity,
             child: ListView.builder(
@@ -149,7 +150,7 @@ class _InfoPageState extends State<InfoPage> {
                           ),
                           Expanded(
                             flex: 3,
-                            child: Container(
+                            child: SizedBox(
                               height: getProportionateScreenHeight(200.0),
                               child: Column(
                                 children: [
@@ -172,7 +173,7 @@ class _InfoPageState extends State<InfoPage> {
                                       horizontal:
                                           getProportionateScreenWidth(12.0),
                                     ),
-                                    child: Container(
+                                    child: SizedBox(
                                       child: RichText(
                                         text: TextSpan(
                                           style: TextStyle(
@@ -193,7 +194,7 @@ class _InfoPageState extends State<InfoPage> {
                                             ),
                                             TextSpan(
                                               text:
-                                                  ('многопрофильная группа компаний, ориентированных на дистрибьюцию товаров'),
+                                                  ('многопрофильная группа компаний, ориентированных на дистрибьюцию товаров'.tr()),
                                               style: TextStyle(
                                                 color: AppColors().kTextColor,
                                                 fontSize:

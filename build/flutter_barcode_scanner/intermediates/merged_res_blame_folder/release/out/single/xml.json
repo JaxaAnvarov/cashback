@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\flutter_barcode_scanner\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_top_start.xml",
+        "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\4bc746168135fdf027f712ea87dda10d\\transformed\\material-1.3.0\\res\\xml\\standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\flutter_barcode_scanner\\intermediates\\merged_res\\release\\xml\\standalone_badge.xml",
+        "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\4bc746168135fdf027f712ea87dda10d\\transformed\\material-1.3.0\\res\\xml\\standalone_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\flutter_barcode_scanner\\intermediates\\merged_res\\release\\xml\\standalone_badge_offset.xml",
+        "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\4bc746168135fdf027f712ea87dda10d\\transformed\\material-1.3.0\\res\\xml\\standalone_badge_offset.xml"
+    },
+    {
+        "merged": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\flutter_barcode_scanner\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_bottom_start.xml",
+        "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\4bc746168135fdf027f712ea87dda10d\\transformed\\material-1.3.0\\res\\xml\\standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\flutter_barcode_scanner\\intermediates\\merged_res\\release\\xml\\standalone_badge_gravity_bottom_end.xml",
+        "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\4bc746168135fdf027f712ea87dda10d\\transformed\\material-1.3.0\\res\\xml\\standalone_badge_gravity_bottom_end.xml"
+    }
+]

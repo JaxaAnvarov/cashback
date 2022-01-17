@@ -3,10 +3,14 @@ import 'package:tiin_cashback/core/constants/exports.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class LocationPage extends StatelessWidget {
-  const LocationPage({Key? key}) : super(key: key);
+  LocationPage({Key? key}) : super(key: key);
+  double? _height;
+  double? _width;
 
   @override
   Widget build(BuildContext context) {
+    _height = MediaQuery.of(context).size.height;
+    _width = MediaQuery.of(context).size.width;
     SizeConfig().init(context);
     return Scaffold(
       body: Column(
@@ -36,7 +40,7 @@ class LocationPage extends StatelessWidget {
             ),
           ),
           Container(
-            height: getProportionateScreenHeight(722.0),
+            height: _height! * 0.775,
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(

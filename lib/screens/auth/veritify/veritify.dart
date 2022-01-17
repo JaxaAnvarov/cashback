@@ -44,7 +44,7 @@ class _VertifyPageState extends State<VertifyPage> {
                     height: getProportionateScreenHeight(16.0),
                     child: Row(
                       children: [
-                        Container(
+                        SizedBox(
                           child: Text(
                             'Номер мобильного : +998 '.tr(),
                             style: TextStyle(
@@ -55,7 +55,7 @@ class _VertifyPageState extends State<VertifyPage> {
                             ),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           child: Text(
                             FormServices().number.text.tr(),
                             style: TextStyle(
@@ -159,33 +159,16 @@ class _VertifyPageState extends State<VertifyPage> {
                 text: 'Повторно отправить код можно через 00:58 сек'.tr(),
               ),
             ),
-            // Row(
-            //   children: [
-            //     ElevatedButton(
-            //       onPressed: () {
-            //         setState(
-            //           () {
-            //             context.setLocale(const Locale('ru', 'RU'));
-            //           },
-            //         );
-            //       },
-            //       child: const Text('ru'),
-            //     ),
-            //     ElevatedButton(
-            //       onPressed: () {
-            //         setState(
-            //           () {
-            //             context.setLocale(const Locale('uz', 'UZ'));
-            //           },
-            //         );
-            //       },
-            //       child: const Text('uz'),
-            //     ),
-            //   ],
-            // )
           ],
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    FormServices().smsCode.dispose();
   }
 }

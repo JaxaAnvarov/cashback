@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'package:tiin_cashback/core/constants/exports.dart';
-import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;
 class UsersData {
   static Future<List<Users>> _getUsersFromApi() async {

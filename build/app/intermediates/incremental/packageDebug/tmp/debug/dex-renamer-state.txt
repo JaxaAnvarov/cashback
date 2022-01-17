@@ -1,4 +1,4 @@
-#Mon Jan 17 14:33:19 UZT 2022
+#Mon Jan 17 18:40:56 UZT 2022
 base.2=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex

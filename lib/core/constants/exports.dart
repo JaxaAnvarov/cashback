@@ -28,6 +28,10 @@ export 'package:tiin_cashback/screens/auth/information/drop_down.dart';
 export 'package:tiin_cashback/screens/profile/componet_pages/answers_page.dart';
 export 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 export 'package:tiin_cashback/core/models/users/user_models.dart';
+export 'package:dio/dio.dart';
+export 'dart:convert';
+export 'package:flutter/services.dart';
+
 
 
 

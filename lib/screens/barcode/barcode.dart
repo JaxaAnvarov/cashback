@@ -1,8 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:tiin_cashback/core/constants/exports.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class BarcodePage extends StatefulWidget {
   const BarcodePage({Key? key}) : super(key: key);
@@ -25,7 +23,7 @@ class _BarcodePageState extends State<BarcodePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: getProportionateScreenHeight(45.0)),
+            SizedBox(height: getProportionateScreenHeight(50.0)),
             Container(
               height: _height! * 0.4,
               width: _height! * 0.4,
@@ -42,11 +40,11 @@ class _BarcodePageState extends State<BarcodePage> {
               padding: EdgeInsets.symmetric(
                 horizontal: getProportionateScreenWidth(16.0),
               ),
-              child: Container(
+              child: SizedBox(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
+                    SizedBox(
                       height: getProportionateScreenHeight(21.0),
                       width: getProportionateScreenWidth(52.0),
                       child: Text(
@@ -83,7 +81,7 @@ class _BarcodePageState extends State<BarcodePage> {
               height: getProportionateScreenHeight(56.0),
               width: getProportionateScreenWidth(369.0),
               child: Text(
-                'Смесь Nestle NAN Optipro 4 с \n18м 400гр',
+                'Смесь Nestle NAN Optipro 4 с \n18м 400гр'.tr(),
                 style: TextStyle(
                   color: const Color(0xFF545454),
                   fontFamily: 'Roboto',
@@ -264,7 +262,7 @@ class _BarcodePageState extends State<BarcodePage> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Text(
-                  'Skanirovat',
+                  'Сканировать'.tr(),
                   style: TextStyle(
                     color: AppColors().kPrimaryWhiteColors,
                     fontFamily: 'Inter',
