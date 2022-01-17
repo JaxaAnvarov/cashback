@@ -1,0 +1,49 @@
+com/amolg/flutterbarcodescanner/BarcodeGraphicTracker.java
+ com.amolg.flutterbarcodescanner.BarcodeGraphicTracker
+ com.amolg.flutterbarcodescanner.BarcodeGraphicTracker$BarcodeUpdateListener
+com/amolg/flutterbarcodescanner/camera/GraphicOverlay.java
+ com.amolg.flutterbarcodescanner.camera.GraphicOverlay
+ com.amolg.flutterbarcodescanner.camera.GraphicOverlay$Graphic
+com/amolg/flutterbarcodescanner/camera/CameraSourcePreview.java
+ com.amolg.flutterbarcodescanner.camera.CameraSourcePreview
+ com.amolg.flutterbarcodescanner.camera.CameraSourcePreview$1
+ com.amolg.flutterbarcodescanner.camera.CameraSourcePreview$SurfaceCallback
+com/amolg/flutterbarcodescanner/BarcodeCaptureActivity.java
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$1
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$2
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$CaptureGestureListener
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$SCAN_MODE_ENUM
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$ScaleListener
+ com.amolg.flutterbarcodescanner.BarcodeCaptureActivity$USE_FLASH
+com/amolg/flutterbarcodescanner/FlutterBarcodeScannerPlugin.java
+ com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin
+ com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin$1
+ com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin$LifeCycleObserver
+com/amolg/flutterbarcodescanner/BarcodeTrackerFactory.java
+ com.amolg.flutterbarcodescanner.BarcodeTrackerFactory
+com/amolg/flutterbarcodescanner/BuildConfig.java
+ com.amolg.flutterbarcodescanner.BuildConfig
+com/amolg/flutterbarcodescanner/constants/AppConstants.java
+ com.amolg.flutterbarcodescanner.constants.AppConstants
+com/amolg/flutterbarcodescanner/utils/AppUtil.java
+ com.amolg.flutterbarcodescanner.utils.AppUtil
+com/amolg/flutterbarcodescanner/BarcodeGraphic.java
+ com.amolg.flutterbarcodescanner.BarcodeGraphic
+com/amolg/flutterbarcodescanner/camera/CameraSource.java
+ com.amolg.flutterbarcodescanner.camera.CameraSource
+ com.amolg.flutterbarcodescanner.camera.CameraSource$1
+ com.amolg.flutterbarcodescanner.camera.CameraSource$AutoFocusCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$AutoFocusMoveCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$Builder
+ com.amolg.flutterbarcodescanner.camera.CameraSource$CameraAutoFocusCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$CameraAutoFocusMoveCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$CameraPreviewCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$FlashMode
+ com.amolg.flutterbarcodescanner.camera.CameraSource$FocusMode
+ com.amolg.flutterbarcodescanner.camera.CameraSource$FrameProcessingRunnable
+ com.amolg.flutterbarcodescanner.camera.CameraSource$PictureCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$PictureDoneCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$PictureStartCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$ShutterCallback
+ com.amolg.flutterbarcodescanner.camera.CameraSource$SizePair
