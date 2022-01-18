@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
               child: MyTextWidget(
                 color: AppColors().kPrimaryBlackColors,
                 size: getProportionateScreenWidth(14.0),
-                text: 'Номер мобильного'.tr(),
+                text: 'Номер мобильного :'.tr(),
               ),
             ),
             SizedBox(

@@ -32,11 +32,11 @@ class _InfoPageState extends State<InfoPage> {
             ),
             child: Padding(
               padding: EdgeInsets.only(
-                top: getProportionateScreenHeight(50.0),
+                top: getProportionateScreenHeight(35.0),
               ),
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: getProportionateScreenWidth(23.0),
+                  horizontal: getProportionateScreenWidth(25.0),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -44,19 +44,10 @@ class _InfoPageState extends State<InfoPage> {
                     Row(
                       children: [
                         SizedBox(
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.arrow_back_ios,
-                              color: AppColors().kPrimaryWhiteColors,
-                            ),
-                            onPressed: () {},
-                          ),
-                        ),
-                        SizedBox(
                           child: MyTextWidget(
                             color: AppColors().kPrimaryWhiteColors,
                             size: getProportionateScreenWidth(18.0),
-                            text: 'Новости',
+                            text: 'Новости'.tr(),
                           ),
                         ),
                       ],
@@ -68,6 +59,7 @@ class _InfoPageState extends State<InfoPage> {
                     ),
                   ],
                 ),
+                
               ),
             ),
           ),

@@ -1,9 +1,9 @@
-#Mon Jan 17 18:40:56 UZT 2022
-base.2=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+#Tue Jan 18 11:53:15 UZT 2022
+base.2=C\:\\flutter_projects\\cashback\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.2=classes3.dex
-base.1=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.1=C\:\\flutter_projects\\cashback\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
-base.0=C\:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.0=C\:\\flutter_projects\\cashback\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

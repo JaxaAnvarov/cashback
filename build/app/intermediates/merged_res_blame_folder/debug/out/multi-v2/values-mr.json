@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "C:\\flutter_projects\\cashback\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\44b364435bdfcc58fbdf88d4e46a689e\\transformed\\appcompat-1.2.0\\res\\values-mr\\values-mr.xml",

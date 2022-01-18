@@ -54,7 +54,7 @@ class DetailPage extends StatelessWidget {
                             child: MyTextWidget(
                               color: AppColors().kPrimaryWhiteColors,
                               size: getProportionateScreenWidth(18.0),
-                              text: 'Новости',
+                              text: 'Новости'.tr(),
                             ),
                           ),
                         ],

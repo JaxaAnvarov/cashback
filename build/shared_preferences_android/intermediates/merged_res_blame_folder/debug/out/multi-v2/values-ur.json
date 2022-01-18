@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\shared_preferences_android\\intermediates\\merged_res\\debug\\values-ur\\values-ur.xml",
+            "outputFile": "C:\\flutter_projects\\cashback\\build\\shared_preferences_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\0d07b4e5b6188e50041239f12aa302fd\\transformed\\core-1.6.0\\res\\values-ur\\values-ur.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\JAHONGIR\\Downloads\\tiin\\build\\shared_preferences_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
+            "outputFile": "C:\\flutter_projects\\cashback\\build\\shared_preferences_android\\intermediates\\merged_res\\debug\\values-ur\\values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JAHONGIR\\.gradle\\caches\\transforms-3\\0d07b4e5b6188e50041239f12aa302fd\\transformed\\core-1.6.0\\res\\values-ur\\values-ur.xml",

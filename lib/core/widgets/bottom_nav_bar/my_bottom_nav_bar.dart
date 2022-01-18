@@ -13,7 +13,7 @@ class MyBottomNavBarWidget extends StatelessWidget {
     var _context = context.watch<BottomNavBarProvier>();
     return CurvedNavigationBar(
       animationCurve: Curves.easeInOutCubic,
-      color: AppColors().kPrimarySecondBgColors,
+      color: AppColors().kPrimaryFirstBgColors,
       backgroundColor: AppColors().kTransparentColor,
       items: [
         SvgPicture.asset(

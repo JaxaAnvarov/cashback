@@ -100,8 +100,8 @@ class _BarcodePageState extends State<BarcodePage> {
                     width: getProportionateScreenWidth(135.0),
                     decoration: BoxDecoration(
                       border: Border.all(
-                        color: AppColors().kPrimaryFirstBgColors,
-                      ),
+                          color: AppColors().kPrimaryFirstBgColors,
+                          width: getProportionateScreenWidth(1.5)),
                     ),
                     child: Row(
                       children: [
@@ -150,8 +150,12 @@ class _BarcodePageState extends State<BarcodePage> {
                   Container(
                     height: getProportionateScreenHeight(76.0),
                     width: getProportionateScreenWidth(135.0),
-                    decoration:
-                        BoxDecoration(border: Border.all(color: Colors.green)),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: AppColors().kPrimaryFirstBgColors,
+                        width: getProportionateScreenWidth(1.5),
+                      ),
+                    ),
                     child: Row(
                       children: [
                         Container(
@@ -183,7 +187,7 @@ class _BarcodePageState extends State<BarcodePage> {
                             ),
                           ),
                           child: Text(
-                            'от\n1шт',
+                            'от\n5шт',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: AppColors().kPrimaryWhiteColors,
@@ -199,8 +203,12 @@ class _BarcodePageState extends State<BarcodePage> {
                   Container(
                     height: getProportionateScreenHeight(76.0),
                     width: getProportionateScreenWidth(135.0),
-                    decoration:
-                        BoxDecoration(border: Border.all(color: Colors.green)),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: AppColors().kPrimaryFirstBgColors,
+                        width: getProportionateScreenWidth(1.5),
+                      ),
+                    ),
                     child: Row(
                       children: [
                         Container(
@@ -232,7 +240,7 @@ class _BarcodePageState extends State<BarcodePage> {
                             ),
                           ),
                           child: Text(
-                            'от\n1шт',
+                            'от\n10шт',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: AppColors().kPrimaryWhiteColors,
@@ -258,7 +266,7 @@ class _BarcodePageState extends State<BarcodePage> {
                 height: getProportionateScreenHeight(55.0),
                 width: getProportionateScreenWidth(400.0),
                 decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: AppColors().kPrimaryFirstBgColors,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Text(
