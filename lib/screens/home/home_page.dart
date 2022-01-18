@@ -314,7 +314,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 Container(
                                   margin: EdgeInsets.only(
                                       top: getProportionateScreenWidth(20.0),
-                                      left: getProportionateScreenWidth(18.0),
+                                      left: getProportionateScreenWidth(8.0),
                                       right:
                                           getProportionateScreenWidth(265.0)),
                                   width: getProportionateScreenWidth(70.0),
@@ -331,7 +331,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                     left: getProportionateScreenWidth(3.0),
                                     right: getProportionateScreenWidth(200.0),
                                   ),
-                                  width: getProportionateScreenWidth(120.0),
+                                  width: getProportionateScreenWidth(130.0),
                                   child: MyTextWidget(
                                     color: AppColors().kColor,
                                     size: getProportionateScreenWidth(14.0),
@@ -392,7 +392,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 Container(
                                   margin: EdgeInsets.only(
                                       top: getProportionateScreenWidth(20.0),
-                                      left: getProportionateScreenWidth(19.0),
+                                      left: getProportionateScreenWidth(0.0),
                                       right:
                                           getProportionateScreenWidth(265.0)),
                                   width: getProportionateScreenWidth(75.0),
@@ -409,7 +409,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                     left: getProportionateScreenWidth(10.0),
                                     right: getProportionateScreenWidth(200.0),
                                   ),
-                                  width: getProportionateScreenWidth(130.0),
+                                  width: getProportionateScreenWidth(150.0),
                                   child: MyTextWidget(
                                     color: AppColors().kColor,
                                     size: getProportionateScreenWidth(14.0),

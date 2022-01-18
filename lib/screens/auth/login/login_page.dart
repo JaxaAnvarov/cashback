@@ -24,10 +24,10 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               margin: EdgeInsets.only(
                 top: getProportionateScreenHeight(215.0),
-                left: getProportionateScreenWidth(20.0),
-                right: getProportionateScreenWidth(142.0),
+                left: getProportionateScreenWidth(24.0),
+                right: getProportionateScreenWidth(138.0),
               ),
-              width: getProportionateScreenWidth(250.0),
+              width: getProportionateScreenWidth(260.0),
               height: getProportionateScreenHeight(33.0),
               child: MyTextWidget(
                 color: AppColors().kPrimaryBlackColors,
@@ -161,13 +161,16 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       width: getProportionateScreenWidth(12.0),
                     ),
-                    MyTextWidget(
-                      color: AppColors().kPrimaryBlackColors,
-                      text:
-                          "Я согласен с Пользовательским соглашением и даю \nсогласие на обработку персональных данных"
-                              .tr(),
-                      size: getProportionateScreenWidth(13.0),
-                    ),
+                    Text(
+                      "Я согласен с Пользовательским соглашением и даю \nсогласие на обработку персональных данных"
+                          .tr(),
+                      style: TextStyle(
+                        color: AppColors().kPrimaryBlackColors,
+                        fontFamily: 'Meduim',
+                        fontSize: getProportionateScreenWidth(13.0),
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -210,7 +213,7 @@ class _LoginPageState extends State<LoginPage> {
                                   color: const Color(0xFF4D4D4D),
                                   fontSize: getProportionateScreenWidth(13.0),
                                   fontWeight: FontWeight.w400,
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Meduim',
                                 ),
                               ),
                               TextSpan(
@@ -221,7 +224,7 @@ class _LoginPageState extends State<LoginPage> {
                                   color: const Color(0xFF4D4D4D),
                                   fontSize: getProportionateScreenWidth(13.0),
                                   fontWeight: FontWeight.w400,
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Meduim',
                                 ),
                               ),
                               TextSpan(
@@ -230,7 +233,7 @@ class _LoginPageState extends State<LoginPage> {
                                   color: AppColors().kPrimaryBlackColors,
                                   fontSize: getProportionateScreenWidth(13.0),
                                   fontWeight: FontWeight.w700,
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Meduim',
                                 ),
                               ),
                             ]),
@@ -253,4 +256,3 @@ class _LoginPageState extends State<LoginPage> {
     FormServices().number.dispose();
   }
 }
-

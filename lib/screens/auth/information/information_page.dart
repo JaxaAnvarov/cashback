@@ -336,12 +336,11 @@ class _InformationPageState extends State<InformationPage> {
     );
   }
 
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    FormServices().name.dispose();
-    FormServices().surName.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   FormServices().name.dispose();
+  //   FormServices().surName.dispose();
+  // }
 
 }

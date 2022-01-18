@@ -19,7 +19,7 @@ class MyTextWidget extends StatelessWidget {
         color: color,
         fontSize: size,
         fontWeight: FontWeight.w700,
-        fontFamily: 'Inter'
+        fontFamily: 'Meduim'
       ),
     );
   }
