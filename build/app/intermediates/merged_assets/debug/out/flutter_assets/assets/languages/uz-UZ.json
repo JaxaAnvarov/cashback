@@ -1,6 +1,9 @@
 {
     "Ну что? Погнали!": "Nima bopti? Ketdik!",
+    "Я согласен с на получение сообшений об акциях,\n" : "Men reklama xabarlarini olishga roziman,\n",
+    "скидках и других рекламных уведомлений\n" : "chegirmalar va boshqa reklama xabarlari\n",
     "Номер мобильного :": "Mobil raqam :",
+    "Номер мобильного : +998 " : "Mobil raqam : +998 ",
     "Вы получите СМС с кодом для входа": "Kirish uchun kodli SMS olasiz",
     "Я согласен с Пользовательским соглашением и даю \nсогласие на обработку персональных данных": "Men foydalanuvchi shartnomasiga roziman va \nshaxsiy ma'lumotlarni qayta ishlashga rozilik beraman",
     "Подтверждение": "Tasdiqlash",
@@ -10,7 +13,7 @@
     "Повторно отправить код можно через 00:58 сек": "Qayta kiritishingiz mumkin kodni 00:58 soniyadan \nkeyin yuboring",
     "Добрый день,": "Xayrli kun,",
     "На вашем балансе:": "Balansingizda:",
-    "Начните покупки через": "Xarid qilishni boshlang",
+    "Начните \nпокупки через": "Xarid \nqilishni boshlang",
     "Бонусы": "Bonuslar",
     "Покупки": "Xarid",
     "Кэшбек": "Cashback",
@@ -47,6 +50,10 @@
     "Неженатый" : "Uylanmagan",
     "Смесь Nestle NAN Optipro 4 с \n18м 400гр": "Nestle NAN Optipro 4 ni \n18m 400g bilan aralashtiring",
     "Сканировать": "Skanerlash",
+    "Показать код" : "Kodni ko'rish",
+    "Новости" : "Xabarlar",
+    "Любой ваш отзыв важен для нас. \nПоля, отмеченные (*), обязательны для \nзаполнения." : "Sizning har qanday fikringiz biz uchun muhim. \nYulduzcha (*) bilan belgilangan maydonlar shart.",
+    "Кешбек карта виртульной и не имеет физического аналога. Виртуальная \nкарта доступна для пользования только через данное приложение. \nПри регистрации карты просим ва вводить реальные данные, поскольку \nони огут быть использованы для идентификации владельца карты в \nслучае ее утерии." : "Cashback kartasi virtual bo'lib, uning jismoniy hamkasbi yo'q. Virtual \nkartadan faqat ushbu ilova orqali foydalanish mumkin. \nKartani roʻyxatdan oʻtkazayotganda haqiqiy maʼlumotlarni kiriting, chunki \nkarta yoʻqolib qolganda, \nular karta egasini aniqlash uchun ishlatilishi mumkin.",
     "многопрофильная группа компаний, ориентированных на дистрибьюцию товаров" : "tovarlarni taqsimlashga yo'naltirilgan diversifikatsiyalangan kompaniyalar guruh",
     "вы можете осуществить оплату за свою покупку с \nпомощью безналичных расчетов путем перечисления \nденежных средств на \nрасчетный счет нашего предприятия;" : "kompaniyamizning hisob-varag'iga \npul o'tkazish orqali \npulsiz to'lovlar orqali xaridingiz uchun to'lashingiz mumkin;"
 } 

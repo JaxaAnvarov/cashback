@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tiin_cashback/core/constants/exports.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:tiin_cashback/provider/theme/theme_data.dart';
 
 class SettingsPage extends StatefulWidget {
   SettingsPage({Key? key}) : super(key: key);
@@ -16,6 +17,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
+    ThemeChanger _themeChanger = Provider.of<ThemeChanger>(context);
     return Scaffold(
       body: Column(
         children: [
@@ -72,7 +74,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       // context.setLocale(Locale('uz', 'UZ'));
                       context.setLocale(Locale('ru', 'RU'));
                     },
-                    icon: Icon(Icons.refresh),
+                    icon: const Icon(Icons.refresh),
                   ),
                 ],
               ),
@@ -220,6 +222,28 @@ class _SettingsPageState extends State<SettingsPage> {
                 ],
               ),
             ),
+          ),
+          SizedBox(height: getProportionateScreenWidth(40.0)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  _themeChanger.setTheme(ThemeData.dark());
+                },
+                child: const Text(
+                  "Dark Mode",
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  _themeChanger.setTheme(ThemeData.light());
+                },
+                child: const Text(
+                  "Light Mode",
+                ),
+              ),
+            ],
           ),
         ],
       ),
