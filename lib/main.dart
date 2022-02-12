@@ -28,13 +28,15 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider<ThemeChanger>(
       create: (context) => ThemeChanger(ThemeData.dark()),
       child: Consumer<ThemeChanger>(
-        builder: (context, model, child) => MaterialAppWidget(),
+        builder: (context, model, child) => const MaterialAppWidget(),
       ),
     );
   }
 }
 
 class MaterialAppWidget extends StatelessWidget {
+  const MaterialAppWidget({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeChanger>(context);

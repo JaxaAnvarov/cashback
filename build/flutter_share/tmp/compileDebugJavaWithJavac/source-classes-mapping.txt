@@ -1,0 +1,4 @@
+com/example/fluttershare/BuildConfig.java
+ com.example.fluttershare.BuildConfig
+com/example/fluttershare/FlutterSharePlugin.java
+ com.example.fluttershare.FlutterSharePlugin

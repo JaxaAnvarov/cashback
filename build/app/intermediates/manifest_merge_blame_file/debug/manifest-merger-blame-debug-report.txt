@@ -37,57 +37,67 @@
 27-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-33
 28        android:theme="@style/Theme.AppCompat.NoActionBar" >
 28-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-59
-29        <activity
-30            android:name="com.example.tiin_cashback.MainActivity"
-31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-32            android:exported="true"
-33            android:hardwareAccelerated="true"
-34            android:launchMode="singleTop"
-35            android:theme="@style/LaunchTheme"
-36            android:windowSoftInputMode="adjustResize" >
-37
-38            <!--
-39                 Specifies an Android theme to apply to this Activity as soon as
-40                 the Android process has started. This theme is visible to the user
-41                 while the Flutter UI initializes. After that, this theme continues
-42                 to determine the Window background behind the Flutter UI.
-43            -->
-44            <meta-data
-45                android:name="io.flutter.embedding.android.NormalTheme"
-46                android:resource="@style/NormalTheme" />
+29        <provider
+30            android:name="androidx.core.content.FileProvider"
+31            android:authorities="com.example.tiin_cashback.provider"
+32            android:exported="false"
+33            android:grantUriPermissions="true" >
+34            <meta-data
+35                android:name="android.support.FILE_PROVIDER_PATHS"
+36                android:resource="@xml/provider_paths" />
+37        </provider>
+38
+39        <activity
+40            android:name="com.example.tiin_cashback.MainActivity"
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42            android:exported="true"
+43            android:hardwareAccelerated="true"
+44            android:launchMode="singleTop"
+45            android:theme="@style/LaunchTheme"
+46            android:windowSoftInputMode="adjustResize" >
 47
-48            <intent-filter>
-49                <action android:name="android.intent.action.MAIN" />
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-52            </intent-filter>
-53        </activity>
-54        <!--
-55             Don't delete the meta-data below.
-56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-57        -->
-58        <meta-data
-59            android:name="flutterEmbedding"
-60            android:value="2" />
-61
-62        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
-62-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-91
-62-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:19-88
-63        <activity
-63-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
-64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-64-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
-65            android:exported="false"
-65-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
-66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-66-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
-67
+48            <!--
+49                 Specifies an Android theme to apply to this Activity as soon as
+50                 the Android process has started. This theme is visible to the user
+51                 while the Flutter UI initializes. After that, this theme continues
+52                 to determine the Window background behind the Flutter UI.
+53            -->
+54            <meta-data
+55                android:name="io.flutter.embedding.android.NormalTheme"
+56                android:resource="@style/NormalTheme" />
+57
+58            <intent-filter>
+59                <action android:name="android.intent.action.MAIN" />
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+62            </intent-filter>
+63        </activity>
+64        <!--
+65             Don't delete the meta-data below.
+66             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+67        -->
 68        <meta-data
-68-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
-69            android:name="com.google.android.gms.version"
-69-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
-70            android:value="@integer/google_play_services_version" />
-70-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
-71    </application>
-72
-73</manifest>
+69            android:name="flutterEmbedding"
+70            android:value="2" />
+71
+72        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+72-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-91
+72-->[:flutter_barcode_scanner] C:\flutter_projects\cashback\build\flutter_barcode_scanner\intermediates\merged_manifest\debug\AndroidManifest.xml:18:19-88
+73        <activity
+73-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+74            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+74-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
+75            android:exported="false"
+75-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\76b0bd0939e74c35d9c16515ac210a1d\transformed\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+77
+78        <meta-data
+78-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+79            android:name="com.google.android.gms.version"
+79-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+80            android:value="@integer/google_play_services_version" />
+80-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\JAHONGIR\.gradle\caches\transforms-3\96fc973711a55625dbe32d2f55d220b0\transformed\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+81    </application>
+82
+83</manifest>
