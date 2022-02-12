@@ -11,6 +11,9 @@ class FormServices extends ChangeNotifier {
   static final TextEditingController _smsCode = TextEditingController();
   static final TextEditingController _sms = TextEditingController();
 
+  static final TextEditingController _userFullNameController =
+      TextEditingController();
+
   TextEditingController get number => _numberController;
   TextEditingController get name => _nameController;
   TextEditingController get surName => _surNameController;
